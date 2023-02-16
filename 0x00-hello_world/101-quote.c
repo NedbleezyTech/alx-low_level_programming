@@ -1,0 +1,14 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ * Return: Always 0 but 1 this time
+ */
+
+int main(void)
+{
+	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19", stdout);
+
+	return (1);
+
+
+}
