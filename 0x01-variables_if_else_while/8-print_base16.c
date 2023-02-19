@@ -1,21 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
- * main - Entry point
+ * main - is entry of program
  *
- * Return: Always 0 (Success)
+ * Return: 0, if succesful
  */
 int main(void)
 {
-	int d;
-	char low;
+	/*
+	 * prints the hexadecimal base16,using putchar only
+	 * loops through 9-0,prints them simulating char with arithemtics
+	 * loops through a-f, prints them
+	 */
+	int x;
+	char y;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-	for (low = 'a'; low <= 'f'; low++)
-		putchar(low);
-		putchar('\n');
+	for (x = 0 ; x < 10 ; x++)
+		putchar((x % 10) + '0');
+
+	for (y = 'a' ; y <= 'f' ; y++)
+		putchar(y);
+	putchar('\n');
 
 	return (0);
 }
