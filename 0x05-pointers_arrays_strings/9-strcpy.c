@@ -1,21 +1,27 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _strncpy - Entry point
+ * char *_strcpy - a function that copies the string pointed to by src
  * @dest: copy to
  * @src: copy from
- * @n: input number of char
- * Return: Always 0 (Success)
+ * Return: string
  */
-char *_strncpy(char *dest, char *src, int n)
+
+char *_strcpy(char *dest, char *src)
+
 {
-	int i;
+	int l = 0;
 
-	for (i = 0; src[i] != '\0'; i++)
-		if (i < n)
-			dest[i] = src[i];
-		while (i < n)
-			dest[i++] = '\0';
+	int x = 0;
 
+	while (*(src + l) != '\0')
+	{
+		l++;
+	}
+	for ( ; x < l; x++)
+	{
+		dest[x] = src[x];
+	}
+	dest[l] = '\0';
 	return (dest);
 }
